@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  btdocs:
+    build: ./
+    ports:
+      - '8091:8091'
+    stdin_open: true
+    volumes:
+      - './:/code'
